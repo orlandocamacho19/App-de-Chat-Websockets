@@ -15,13 +15,13 @@ public class Message {
     private String sender;
     private String addressee; 
     private String text;
-    private Date date;
+    private String date;
 
     public Message(String sender, String addressee, String text) {
         this.sender = sender;
         this.addressee = addressee;
         this.text = text;
-        this.date = new Date();
+        this.date = new Date().toString();
     }
 
     public String getSender() {
@@ -36,7 +36,7 @@ public class Message {
         return text;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
