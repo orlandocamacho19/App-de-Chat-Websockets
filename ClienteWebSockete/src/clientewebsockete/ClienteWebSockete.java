@@ -41,8 +41,7 @@ public class ClienteWebSockete {
             String addressee=null;
             String msj=null;
             do{
-                
-                System.out.print("Destinatario: ");
+                System.out.print("Para: ");
                 addressee = sc.nextLine();
                 System.out.print("Mensaje: ");
                 msj = sc.nextLine();
